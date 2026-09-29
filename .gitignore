@@ -1,0 +1,40 @@
+# Raw IMD GRD / binary downloads (large; re-fetch with src.download_data)
+data/raw/
+*.grd
+*.idx
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Optional large intermediates
+*.nc
+!data/processed/*.csv
+!data/processed/*.parquet
+
+# Keep processed data, predictions, and models (needed for app after clone)
+!data/processed/climate_pilot.csv
+!data/processed/climate_pilot.parquet
+!data/processed/features.parquet
+!data/processed/predictions.csv
+!models/*.joblib
+!models/metrics.json
+!assets/*.png
+!assets/*.html
+
+# Raw data ignored (already in data/raw/ rule above)
